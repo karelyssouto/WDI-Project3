@@ -12,6 +12,7 @@
 * As a Admin, I want to create posts that contain an image and a description to give users a way to engage with the business and stay up to date.
 * As an Admin, I want to be able to create, update and delete services provided for customers.
 * As an Admin I want to add contact information so that users are able to get information about the business.
+* As an User, I want to add reviews based on past customer experience, adding my name, where I'm from and the description that will include my review.
 
 ## Technologies Used
 * MongoDB.
