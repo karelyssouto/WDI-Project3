@@ -25,7 +25,7 @@
 * Google fonts.
 * Anime.js / Animate.css
 * Adobe XD.
-* Vertabelo.
+* Lucid Chart.
 * [Design Course Youtube Channel](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
 * [Traversy Media Youtube Channel](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
