@@ -31,3 +31,5 @@
 
 ## ERDs
 ![erd](./images/WDIerd.png)
+## Wireframes and UI Design
+![wireframe and UI](./images/wireframe-design.png)
