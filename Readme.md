@@ -31,6 +31,6 @@
 * [Traversy Media Youtube Channel](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
 ## ERDs
-![erd](./images/WDIerd.png)
+![erd](./images/erd.png)
 ## Wireframes and UI Design
 ![wireframe and UI](./images/wireframe-design.png)
