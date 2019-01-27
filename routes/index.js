@@ -4,15 +4,15 @@ const postsController = require('../controllers/postsController')
 const reviewsController = require('../controllers/reviewsController')
 
 
-router.get('/posts', postsController.index)
+router.get('/api/posts', postsController.index)
 router.post('/api/posts', postsController.create)
-router.get('/posts/:postId', postsController.show)
-router.patch('/posts/:postId', postsController.update)
-router.delete('/posts/:postId', postsController.delete)
+router.get('/api/posts/:postId', postsController.show)
+router.patch('/api/posts/:postId', postsController.update)
+router.delete('/api/posts/:postId', postsController.delete)
 
-router.get('/review', reviewsController.index)
-router.post('/review', reviewsController.create)
-router.delete('/review/:id', reviewsController.delete)
+router.get('/api/review', reviewsController.index)
+router.post('/api/review', reviewsController.create)
+router.delete('/api/review/:id', reviewsController.delete)
 
 
 module.exports = router
