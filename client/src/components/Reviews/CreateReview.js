@@ -23,12 +23,13 @@ class CreateReview extends Component {
                 this.props.getAllReviews()
                 this.props.toggleReviewForm()
             })
+            console.log('worked')
     }
     render() {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type='text' placeholder='image URL' name='img' value={this.state.review.image} onChange={this.handleChange} />
+                    <input type='text' placeholder='name' name='name' value={this.state.review.name} onChange={this.handleChange} />
                     <input type='text' placeholder='location' name='location' value={this.state.review.location} onChange={this.handleChange} />
                     <input type='text' placeholder='description' name='description' value={this.state.review.description} onChange={this.handleChange} />
                     <button>Add your review!</button>

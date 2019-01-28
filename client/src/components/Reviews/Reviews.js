@@ -12,10 +12,15 @@ class Reviews extends Component {
     }
     getAllReviews = () => {
         axios.get(`/api/reviews`)
-        .then((res) => this.setState({review : res.data}))
+        .then((res) => this.setState({reviews : res.data}))
     }
     toggleReviewForm = () => {
-        this.setState({ reviewFormVisible : !this.reviewFormVisible})
+        this.setState({ reviewFormVisible : !this.state.reviewFormVisible})
+    }
+    delete = (id) => {
+        axios.delete(`/api/reviews/${id}`).then(() =>
+            console.log('deleted review')
+        )
     }
     render() {
         return (
@@ -24,9 +29,18 @@ class Reviews extends Component {
                 <button onClick={this.toggleReviewForm}> Add a Review!</button>
                 {this.state.reviewFormVisible ?
                 <CreateReview
-                    getAllPosts={this.getAllReviews}
+                    getAllReviews={this.getAllReviews}
                     toggleReviewForm={this.toggleReviewForm}
                 /> : null }
+                {this.state.reviews.map((review, i) => (
+                    <div key={i}>
+                        <h1>{review.name}</h1>
+                        <h6>{review.location}</h6>
+                        <h3>{review.description}</h3>
+                        <h1>{review._id}</h1>
+                        <button onClick={() => (this.delete(review._id))}>delete</button>
+                    </div>
+                ))}
             </div>
         );
     }

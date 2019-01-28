@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import NavBar from './LandingPage/NavBar';
 
 
 class HomePage extends Component {
     render() {
         return (
             <div>
-                <Link to='/posts'>posts</Link>
-            
-                <Link to='/reviews'>reviews</Link>
+                <NavBar />
+
+                
             </div>
         );
     }

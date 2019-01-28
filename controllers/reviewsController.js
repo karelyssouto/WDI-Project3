@@ -14,7 +14,7 @@ const reviewsController = {
             })
     },
     delete: (req, res) => {
-        Post.findByIdAndDelete(req.params.postId)
+        Review.findByIdAndDelete(req.params.id)
             .then(() => {
                 res.send(200)
             })

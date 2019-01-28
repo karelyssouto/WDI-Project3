@@ -9,7 +9,7 @@ import Reviews from './components/Reviews/Reviews';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div >
         <Router>
           <Switch>
             <Route exact path="/" component={HomePage} />
