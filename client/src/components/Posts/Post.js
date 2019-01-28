@@ -17,6 +17,9 @@ class Post extends Component {
                 this.setState({post : res.data})
             })
     }
+    toggleEditPostForm = () => {
+        this.setState({editFormVisible : !this.state.editFormVisible})
+    }
     delete = () => {
         const postId = this.props.match.params.postId
         axios.delete(`/api/posts/${postId}`)
@@ -26,11 +29,17 @@ class Post extends Component {
         return (
             <div>
                 <img src={this.state.post.img} alt='post'/>
-            <h3>{this.state.post.description}</h3>
-            <div><button onClick={this.delete}>Delete Post</button></div>
-            <EditPost
-                getPost={this.getPost}
-            />
+                <h3>{this.state.post.description}</h3>
+                <button onClick={this.toggleEditPostForm}>Edit Post</button>
+            {this.state.editFormVisible ? 
+                    <EditPost
+                        getPost={this.getPost}
+                        postId={this.state.post._id} 
+                        toggleEditPostForm={this.toggleEditPostForm}
+                    />
+                :null}
+                <div><button onClick={this.delete}>Delete Post</button></div>
+
             </div>
         );
     }

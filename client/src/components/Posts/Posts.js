@@ -35,7 +35,7 @@ class Posts extends Component {
                         <Link to={`/posts/${post._id}`}>
                         <img src={post.img} alt='post'/>
                         <h3>{post.description}</h3>
-                        </Link>                    
+                        </Link>                 
                     </div>
                 ))}
             </div>
