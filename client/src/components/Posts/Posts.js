@@ -19,6 +19,7 @@ class Posts extends Component {
     togglePostForm = () => {
         this.setState({PostFormVisible : !this.state.PostFormVisible})
     }
+
     render() {
         return (
             <div>
@@ -34,7 +35,7 @@ class Posts extends Component {
                         <Link to={`/posts/${post._id}`}>
                         <img src={post.img} alt='post'/>
                         <h3>{post.description}</h3>
-                        </Link>
+                        </Link>                    
                     </div>
                 ))}
             </div>

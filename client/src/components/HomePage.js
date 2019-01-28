@@ -7,6 +7,7 @@ class HomePage extends Component {
         return (
             <div>
                 <Link to='/posts'>posts</Link>
+            
                 <Link to='/reviews'>reviews</Link>
             </div>
         );
