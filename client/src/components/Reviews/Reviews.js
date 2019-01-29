@@ -19,7 +19,7 @@ class Reviews extends Component {
     }
     delete = (id) => {
         axios.delete(`/api/reviews/${id}`).then(() =>
-            console.log('deleted review')
+            this.props.history.goBack()
         )
     }
     render() {

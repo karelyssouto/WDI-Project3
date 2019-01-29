@@ -23,7 +23,7 @@ class Post extends Component {
     delete = () => {
         const postId = this.props.match.params.postId
         axios.delete(`/api/posts/${postId}`)
-            .then(() => this.props.history.goBack())
+            .then(() => this.props.goBack())
     }
     render() {
         return (
