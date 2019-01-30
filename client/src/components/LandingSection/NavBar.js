@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import '../../App.css'
-import Logo from './Logo';
 let NavBarContainer = styled.div`
     background: rgb(204, 5, 18);
     display: inline-block; 
@@ -18,9 +17,8 @@ class NavBar extends Component {
     render() {
         return (
             <div>
-            <Logo/>
             <NavBarContainer>
-                    <Link to='#about' className='link'> About </Link>
+                    <a href='#about' className='link'> About </a>
                     <Link to='#services' className='link'>Services</Link>
                     <Link className='link' to='/posts'>Updates</Link>
                     <Link className='link' to='/reviews'>Reviews</Link>
