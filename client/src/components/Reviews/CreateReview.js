@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import styled from 'styled-components'
+let Inputs = styled.input`
+    border: none;
+    background: white ;
+    color: white;
+    width: 35vw;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    margin-top:5%;
+    outline: none
 
+`
+let Buttons = styled.button`
+    width: 10vw;
+    height: 6vh;
+    border: solid black;
+    background: black;
+    color: white;
+    margin-top: 5%
+
+`
 
 class CreateReview extends Component {
     state = {
@@ -29,10 +50,10 @@ class CreateReview extends Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <input type='text' placeholder='name' name='name' value={this.state.review.name} onChange={this.handleChange} />
-                    <input type='text' placeholder='location' name='location' value={this.state.review.location} onChange={this.handleChange} />
-                    <input type='text' placeholder='description' name='description' value={this.state.review.description} onChange={this.handleChange} />
-                    <button>Add your review!</button>
+                    <Inputs type='text' placeholder='name' name='name' value={this.state.review.name} onChange={this.handleChange} />
+                    <Inputs type='text' placeholder='location' name='location' value={this.state.review.location} onChange={this.handleChange} />
+                    <Inputs type='text' placeholder='description' name='description' value={this.state.review.description} onChange={this.handleChange} />
+                    <Buttons>Share your review!</Buttons>
                 </form>
             </div>
         );

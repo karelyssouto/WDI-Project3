@@ -24,9 +24,9 @@ class ServicesList extends Component {
         return (
             <ServicesListContainer>
                 <ServiceName>Food Truck Events</ServiceName>
-                <ServiceListDescription></ServiceListDescription>
+                <ServiceListDescription>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
                 <ServiceName>Special Events Catering</ServiceName>
-                <ServiceListDescription></ServiceListDescription>
+                <ServiceListDescription>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
             </ServicesListContainer>
         );
     }
