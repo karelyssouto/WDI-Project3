@@ -23,15 +23,8 @@ class AboutInfo extends Component {
         return (
             <AboutDescriptionContainer>
                 <AboutDescription className='prettyFonts'>
-                    Lorem ipsum dolor sit amet, 
-                    nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.
-                    Eam at volutpat consectetuer. Ut vide labores sed.Brute volutpat cum in, 
-                    sit postulant periculis an, ex dictas omnesque scripserit nam. Vix civibus mentitum an, 
-                    ex eleifend scriptorem sit, est an oratio option aliquam.
+Arepa Bistrock is a food truck business that focuses on selling tarditional venezuelan food, more specifically Arepas, a type of food made of ground maize dough or cooked flour prominent in the cuisine of Venezuela. It can be served with accompaniments such as cheese, cuajada or avocado, or split to make 'sandwiches'.
                     <br></br>
-                    Lorem ipsum dolor sit amet, 
-                    nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.
-                    Eam at volutpat consectetuer. 
                 </AboutDescription>
             </AboutDescriptionContainer> 
         );
