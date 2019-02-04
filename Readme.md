@@ -24,7 +24,7 @@
 ## Resources
 * CSS Tricks.
 * Google fonts.
-* Anime.js / Animate.css
+<!-- * Anime.js / Animate.css -->
 * Adobe XD.
 * Lucid Chart.
 * [Design Course Youtube Channel](https://www.youtube.com/channel/UCVyRiMvfUNMA1UPlDPzG5Ow)
