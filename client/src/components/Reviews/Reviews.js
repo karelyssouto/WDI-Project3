@@ -3,6 +3,7 @@ import axios from 'axios';
 import CreateReview from './CreateReview';
 import styled from 'styled-components'
 import Contact from '../ContactSection/Contact';
+import '../../App.css'
 
 let ReviewHeader = styled.h1`
     color: white;
@@ -16,6 +17,7 @@ let ReviewsContainer = styled.div `
     width: 100 vw;
     heigth: 50%;
     color: white;
+
     
 
 `
@@ -31,7 +33,16 @@ let Buttons = styled.button`
     border: solid black;
     background: rgb(204, 5, 18);
     color: white;
-    margin-top: 5%
+    margin-top: 5%;
+    margin-left: 45%
+
+`
+let DeleteButtons = styled.button`
+    width: 10vw;
+    height: 6vh;
+    border: solid black;
+    background: rgb(204, 5, 18);
+    color: white;
 
 `
 class Reviews extends Component {
@@ -58,7 +69,7 @@ class Reviews extends Component {
         return (
             <div>
             <ReviewsContainer>
-                <ReviewHeader>Reviews</ReviewHeader>
+                <ReviewHeader className='prettyTitleFonts'>Reviews</ReviewHeader>
                 <Buttons onClick={this.toggleReviewForm}> Add a Review!</Buttons>
                 <ReviewsDisplay>
                 {this.state.reviewFormVisible ?
@@ -67,12 +78,12 @@ class Reviews extends Component {
                     toggleReviewForm={this.toggleReviewForm}
                 /> : null }
                 {this.state.reviews.map((review, i) => (
-                    <div key={i}>
+                    <div className='reviewWidth' key={i}>
                         
-                        <h1>{review.description}</h1>
-                        <h5>{review.location}</h5>
-                        <h4>{review.name}</h4>
-                        <button onClick={() => (this.delete(review._id))}>delete</button>
+                        <h2 className='prettyFonts'>{review.description}</h2>
+                        <h5 className='prettyFonts'>{review.location}</h5>
+                        <h4 className='prettyTitleFonts'>{review.name}</h4>
+                        <DeleteButtons onClick={() => (this.delete(review._id))}>delete</DeleteButtons>
                     </div>
                 ))}
                 </ReviewsDisplay>

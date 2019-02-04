@@ -4,7 +4,6 @@ import styled from 'styled-components'
 let Inputs = styled.input`
     border: none;
     background: white ;
-    color: white;
     width: 35vw;
     height: 6vh;
     display: flex;
@@ -53,7 +52,7 @@ class CreateReview extends Component {
                     <Inputs type='text' placeholder='name' name='name' value={this.state.review.name} onChange={this.handleChange} />
                     <Inputs type='text' placeholder='location' name='location' value={this.state.review.location} onChange={this.handleChange} />
                     <Inputs type='text' placeholder='description' name='description' value={this.state.review.description} onChange={this.handleChange} />
-                    <Buttons>Share your review!</Buttons>
+                    <Buttons>What did you think?</Buttons>
                 </form>
             </div>
         );

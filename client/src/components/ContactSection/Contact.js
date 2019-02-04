@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import '../../App.css'
+import { Link } from 'react-router-dom'
+
 
 let Container = styled.div `
     width: 100vw;
@@ -26,12 +29,15 @@ class Contact extends Component {
     render() {
         return (
             <Container>
-                <ContactHeader>Contact</ContactHeader>
+                <a name='contact' href='/reviews'></a>
+                <ContactHeader className='prettyTitleFonts'>Contact</ContactHeader>
                 <ContactInfo>
-                <h1>Victor Santana</h1>
-                <h3>Email:</h3><p>arepabistrock@mail.com</p>
-                <h3>Phone</h3><p>+1 (404)-384-8210</p>
+                <h1 className='prettyFonts'>Victor Santana</h1>
+                <h3 className='prettyFonts'>Email:</h3><p>arepabistrock@mail.com</p>
+                <h3 className='prettyFonts'>Phone</h3><p>+1 (404)-384-8210</p>
                 </ContactInfo>
+
+                <Link to='/' className='link'>Home</Link>
             </Container>
         );
     }

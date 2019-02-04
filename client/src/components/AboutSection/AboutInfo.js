@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-
+import '../../App.css'
 
 let AboutDescriptionContainer = styled.div  `
     background: rgb(204, 5, 18);
@@ -22,7 +22,7 @@ class AboutInfo extends Component {
     render() {
         return (
             <AboutDescriptionContainer>
-                <AboutDescription>
+                <AboutDescription className='prettyFonts'>
                     Lorem ipsum dolor sit amet, 
                     nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.
                     Eam at volutpat consectetuer. Ut vide labores sed.Brute volutpat cum in, 

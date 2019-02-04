@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-
+import '../../App.css'
 
 let ServicesListContainer = styled.ul`
     list-style:none;
@@ -23,10 +23,10 @@ class ServicesList extends Component {
     render() {
         return (
             <ServicesListContainer>
-                <ServiceName>Food Truck Events</ServiceName>
-                <ServiceListDescription>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
-                <ServiceName>Special Events Catering</ServiceName>
-                <ServiceListDescription>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
+                <ServiceName className='prettyTitleFonts'>Food Truck Events</ServiceName>
+                <ServiceListDescription className='prettyFonts'>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
+                <ServiceName className='prettyTitleFonts'>Special Events Catering</ServiceName>
+                <ServiceListDescription className='prettyFonts'>nam agam indoctum eu. Et mel malis reformidans, qui albucius adipiscing an.</ServiceListDescription>
             </ServicesListContainer>
         );
     }

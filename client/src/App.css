@@ -8,5 +8,16 @@
   text-decoration: none;
   padding-right: 2%;
   padding-left: 2%;
-  text-transform: uppercase
+  text-transform: uppercase;
+  font-family: 'Chivo', sans-serif;
+}
+.reviewWidth {
+  width: 20vw;
+
+}
+.prettyFonts{
+  font-family: 'Nanum Myeongjo', serif;
+}
+.prettyTitleFonts{
+  font-family: 'Chivo', sans-serif;
 }

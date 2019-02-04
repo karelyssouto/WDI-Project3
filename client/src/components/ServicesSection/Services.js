@@ -47,8 +47,9 @@ class Services extends Component {
     render() {
         return (
             <ServiceContainer>
+                <a name='services' href='/' ></a>
             <ServicesContainer>
-                <h1>Services</h1>
+                    <h1 className='prettyTitleFonts'>Services</h1>
                 <ServicesList/>
                 <PhoneNumberContainer>
                     <Phone src={phone} alt='phone icon' />

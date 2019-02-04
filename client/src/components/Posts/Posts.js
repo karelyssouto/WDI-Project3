@@ -76,14 +76,15 @@ class Posts extends Component {
         return (
             <div>
             <PostSection>
-                <PostHeader>Posts</PostHeader>
+                    <PostHeader className='prettyTitleFonts'>Updates</PostHeader>
+                    
 
                 <PostsContainer>
                 {this.state.posts.map((post, i) => (
                     <div key={i}>
                         <Link className='link' to={`/posts/${post._id}`}>
                         <PostImage src={post.img} alt='post'/>
-                        <h3>{post.description}</h3>
+                            <h3 className='prettyFonts'>{post.description}</h3>
                         </Link>                 
                     </div>
                 ))}
@@ -91,6 +92,7 @@ class Posts extends Component {
 
             </PostSection>
             <CreatePostContainer>
+                <Link to='/' className='link'>Home</Link>
                 <CreatePostButton onClick={this.togglePostForm}><img src={arepa} alt='arepa' /></CreatePostButton>
             </CreatePostContainer>
                 {

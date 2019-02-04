@@ -19,10 +19,10 @@ class NavBar extends Component {
             <div>
             <NavBarContainer>
                     <a href='#about' className='link'> About </a>
-                    <Link to='#services' className='link'>Services</Link>
+                    <a href='#services' className='link'>Services</a>
                     <Link className='link' to='/posts'>Updates</Link>
                     <Link className='link' to='/reviews'>Reviews</Link>
-                    <Link to='#contact' className='link'>Contact</Link>
+                    <Link to='/reviews/#contact' className='link'>Contact</Link>
             </NavBarContainer>
             </div>
             );
